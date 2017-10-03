@@ -167,8 +167,6 @@ function twentytwelve_scripts_styles() {
 
 	wp_register_script( 'infobox', get_template_directory_uri() . '/libs/infobox/infobox.js', array( 'googleMapsAPI' ), '1.1.12', true );
 
-	wp_register_script( 'term-hours', get_template_directory_uri() . '/js/build/term-hours.min.js', array( 'jquery', 'productionJS' ), false, true );
-
 	wp_register_script( 'moment', '//' . $_SERVER['SERVER_NAME'] . '/app/libhours/js/vendor/moment.js', false, false, true );
 
 	wp_register_script( 'tabletop', '//' . $_SERVER['SERVER_NAME'] . '/app/libhours/js/vendor/tabletop.js', false, false, true );
@@ -210,10 +208,6 @@ function twentytwelve_scripts_styles() {
 
 	if ( is_page( 'search' ) ) {
 		wp_enqueue_script( 'searchJS' );
-	}
-
-	if ( is_page( 'term-hours' ) ) {
-		wp_enqueue_script( 'term-hours' );
 	}
 
 	if ( is_page( 'getit' ) ) {
